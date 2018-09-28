@@ -42,7 +42,6 @@ class User(object):
                 books_rated += 1
         return total_rating / books_rated
         
-        
 class Book:
     def __init__(self, title, isbn):
         self.title = str(title)
@@ -164,6 +163,7 @@ class TomeRater:
                         self.add_book_to_user(book, email)
             else:
                 print("Invalid email address.")
+    
     def print_catalog(self):
         for book in self.books:
             print(book)
